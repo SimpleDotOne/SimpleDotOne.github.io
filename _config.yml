@@ -1,5 +1,8 @@
 remote_theme: riggraz/no-style-please
 
-title: Hsin-Po's Webpage
+title: Hsin-Po's Website
 description: Math PhD @ UIUC
-theme_config.show_description: true
+author: Hsin-Po Wang
+
+theme_config:
+  show_description: true
