@@ -29,3 +29,34 @@ Information theory / coding theory / Shannon theory:
 Random coding and polar coding over communication channels.
 Distributed storage and distributed computation,
 application of algebra and combinatorics to.
+
+## Publications
+
+[*Log-logarithmic Time Pruned Polar Coding*](https://doi.org/10.1109/TIT.2020.3041523)
+is to appear in IEEE Transactions on Information Theory.
+
+[*Polar Codes' Simplicity, Random Codes' Durability*](https://doi.org/10.1109/TIT.2020.3041570)
+is to appear in IEEE Transactions on Information Theory.
+
+## Curriculum vitae
+
+Ph.D. Candidate
+(Advisor = [Iwan Duursma](https://faculty.math.illinois.edu/~duursma/))  
+Department of Mathematics  
+University of Illinois at Urbana--Champaign  
+2016--present
+
+Bachelor of Science in Mathematics  
+National Taiwan University (國立臺灣大學)  
+2011--2015
+
+[Teacher ranked as excellent by their students](https://go.illinois.edu/lotrae)  
+Fall 2019 & Spring 2019 & Spring 2018  
+
+Teaching in a middle-school in a remote, minority village
+as an alternative to the mandatory military service.  
+2016
+
+Tbyq zrqny  
+Vagreangvbany Zngurzngvpny Bylzcvnq  
+2011 & 2009
