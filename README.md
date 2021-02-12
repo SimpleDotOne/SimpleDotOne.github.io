@@ -1,29 +1,8 @@
 
-# Hsin-Po Wang
+# Hsin-Po's Website
 
-## Contact
+The gh-pages host for my personal website at simple.one.
 
-Email = hpwang2 at illinois dot edu  
-Social media
-= [Facebook](https://www.facebook.com/Xymbol.1)
-& [Twitter](https://twitter.com/Xymbol_1)
-& [StackExchange](https://stackexchange.com/users/4418253/symbol-1)
+This repo is currently a backup / experiment copy.
 
-## Research
-
-* [arXiv page](https://arxiv.org/a/wang_h_8.html)  
-  
-* [dblp page](https://dblp.org/pid/75/329-1.html)  
-  
-* [ORCiD page](https://orcid.org/0000-0003-2574-1510)  
-  
-* [Google Scholar](https://scholar.google.com/citations?user=tJ8-ChgAAAAJ)  
-  
-* [Semantic Scholar](https://www.semanticscholar.org/author/Hsin-Po-Wang/3003115)  
-  
-
-Interests =
-Information theory / coding theory / Shannon theory:
-Random coding and polar coding over communication channels.
-Distributed storage and distributed computation,
-application of algebra and combinatorics to.
+This repo is currntly under construction.
