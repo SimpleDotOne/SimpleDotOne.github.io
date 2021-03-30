@@ -1,8 +1,8 @@
 
 # Hsin-Po's Website
 
-The gh-pages host for my personal website at simple.one.
+The gh-pages host for my personal website at <simple.one>.
 
 This repo is currently a backup / experiment copy.
 
-This repo is currntly under construction.
+This repo is currently under construction.
