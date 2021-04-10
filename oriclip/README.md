@@ -187,8 +187,8 @@ Two clips = one I-edge = one edge.
 
 ## Wiki
 
-For a systematic introduction of polyhedra, checkout
-[Platonic solid] and [Archimedean solid] and the references therein.
+For a systematic introduction of polyhedra, checkout [Platonic solid] and
+[Archimedean solid] and its dual [Catalan solid] and the references therein.
 
 For more on symmetry groups, see
 [Polyhedral group](https://enwp.org/Polyhedral_group) and the references therein.
@@ -207,20 +207,30 @@ For more on symmetry groups, see
 
 [Archimedean solid]: https://en.wikipedia.org/wiki/Archimedean_solid
   [truncated tetrahedron]: https://en.wikipedia.org/wiki/Truncated_tetrahedron
-  [cuboctahedron]: https://en.wikipedia.org/wiki/Cuboctahedron
   [truncated cube]: https://en.wikipedia.org/wiki/Truncated_cube
   [truncated octahedron]: https://en.wikipedia.org/wiki/Truncated_octahedron
-  [rhombicuboctahedron]: https://en.wikipedia.org/wiki/Rhombicuboctahedron
   [truncated cuboctahedron]: https://en.wikipedia.org/wiki/Truncated_cuboctahedron
-  [snub cube]: https://en.wikipedia.org/wiki/Snub_cube
-  [icosidodecahedron]: https://en.wikipedia.org/wiki/Icosidodecahedron
   [truncated dodecahedron]: https://en.wikipedia.org/wiki/Truncated_dodecahedron
   [truncated icosahedron]: https://en.wikipedia.org/wiki/Truncated_icosahedron
-  [rhombicosidodecahedron]: https://en.wikipedia.org/wiki/Rhombicosidodecahedron
   [truncated icosidodecahedron]: https://en.wikipedia.org/wiki/Truncated_icosidodecahedron
+  [cuboctahedron]: https://en.wikipedia.org/wiki/Cuboctahedron
+  [icosidodecahedron]: https://en.wikipedia.org/wiki/Icosidodecahedron
+  [rhombicuboctahedron]: https://en.wikipedia.org/wiki/Rhombicuboctahedron
+  [rhombicosidodecahedron]: https://en.wikipedia.org/wiki/Rhombicosidodecahedron
+  [snub cube]: https://en.wikipedia.org/wiki/Snub_cube
   [snub dodecahedron]: https://en.wikipedia.org/wiki/Snub_dodecahedron
 
 [Catalan solid]: https://en.wikipedia.org/wiki/Catalan_solid
   [triakis tetrahedron]: https://en.wikipedia.org/wiki/Triakis_tetrahedron
+  [triakis octahedron]: https://en.wikipedia.org/wiki/Triakis_octahedron
+  [disdyakis dodecahedron]: https://en.wikipedia.org/wiki/Disdyakis_dodecahedron
   [tetrakis hexahedron]: https://en.wikipedia.org/wiki/Tetrakis_hexahedron
+  [triakis icosahedron]: https://en.wikipedia.org/wiki/Triakis_icosahedron
+  [disdyakis triacontahedron]: https://en.wikipedia.org/wiki/Disdyakis_triacontahedron
+  [pentakis dodecahedron]: https://en.wikipedia.org/wiki/Pentakis_dodecahedron
   [rhombic dodecahedron]: https://en.wikipedia.org/wiki/Rhombic_dodecahedron
+  [rhombic triacontahedron]: https://en.wikipedia.org/wiki/Rhombic_triacontahedron
+  [deltoidal icositetrahedron]: https://en.wikipedia.org/wiki/Deltoidal_icositetrahedron
+  [deltoidal hexecontahedron]: https://en.wikipedia.org/wiki/Deltoidal_hexecontahedron
+  [pentagonal icositetrahedron]: https://en.wikipedia.org/wiki/Pentagonal_icositetrahedron
+  [pentagonal hexecontahedron]: https://en.wikipedia.org/wiki/Pentagonal_hexecontahedron
