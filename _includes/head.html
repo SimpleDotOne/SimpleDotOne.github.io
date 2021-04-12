@@ -4,7 +4,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <title>
-    <a href="{{ "/" | absolute_url }}">{{ site.title }}</a>
+    {%- if page.title -%}
+      {{ page.title }}
+    {%- else -%}
+      {{ site.title }}
+    {%- endif -%}
   </title>
 
   {%-seo title=false-%}
