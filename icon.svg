@@ -1,26 +1,32 @@
 <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg">
-<g stroke-linecap="round" stroke-linejoin="round" stroke="black" fill="white">
-	<path stroke="white" d="M 0,0 L 0,60 L 60,60 L 60,0" />
-	<path stroke-width="4" d="
+<style>
+	:root {
+		--fg: black;
+	}
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--fg: white;
+		}
+	}
+</style>
+<g stroke-linecap="round" stroke-linejoin="round" stroke="var(--fg)" fill="none">
+	<path stroke-width="4" mask="url(#antibody)" d="
 			M  5,25	l  40,-20
 			M 55,35	l -40, 20
 		" />
-	<path stroke="white" stroke-width="6" d="
-			M  5,30	l  40, 20
-			M 55,30	l -40,-20
-		" />
-	<path stroke-width="4" d="
-			M  5,30	l  40, 20
-			M 55,30	l -40,-20
-		" />
+	<mask id="antibody">
+		<path fill="white" d="M 0,0 L 0,60 L 60,60 L 60,0" />
+		<path stroke-width="6" fill="black" d="
+				M  5,30	l  40, 20
+				M 55,30	l -40,-20
+			" />
+	</mask>
 	<path stroke-width="4" d="
 			M  5,30	l  40, 20
 			M 55,30	l -40,-20
 		" />
 	<path stroke-width="1" d="
 			M  9,27	l  14,-7	l 0, 15	L  9,28
-		" />
-	<path stroke-width="1" d="
 			M 51,33	l -14, 7	l 0,-15	L 51,32
 		" />
 </g>
