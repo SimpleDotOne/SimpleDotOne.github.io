@@ -16,8 +16,8 @@ Fast scroll to
   [S-series](#s-series),
   [A-series](#a-series)
 * Vertex unit:
-  [Φ-series](φ-series),
-  [Δ-series](δ-series)
+  [Φ-series](#φ-series),
+  [Δ-series](#δ-series)
 * Edge unit:
   [X-series](#x-series),
   [L-series](#l-series),
@@ -312,6 +312,14 @@ Two clips = one L-edge = one edge.
 ↑ Vertex config = 3.6.6  
 ↑ Symmetry = tetrahedron's rotations = $A_4$ of order 12  
 
+#### L48-aC
+
+![48 clips forming 24 L-edges forming cuboctahedron](L48-aC.jpg)  
+↑ # Clips = 48  
+↑ Base = [cuboctahedron]  
+↑ Vertex config = 3.4.3.4  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+
 ### I-series, Platonic
 
 Two clips = one I-edge = one edge.
@@ -397,7 +405,7 @@ Two clips = one I-edge = one edge.
 ↑ Base = [truncated octahedron]  
 ↑ Vertex config = 4.6.6  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
-↑ (Dual = tetrakis hexahedron)  
+↑ [I72-kC](#i72kc)  
 
 #### I96-aaC
 
@@ -406,7 +414,7 @@ Two clips = one I-edge = one edge.
 ↑ Base = [rhombicuboctahedron]  
 ↑ Vertex config = 3.4.4.4  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
-↑ (Dual = deltoidal icositetrahedron)  
+↑ [I96-jjC](#i96-jjc)  
 
 #### I120-sC
 
@@ -471,6 +479,24 @@ Two clips = one I-edge = one edge.
 ↑ Face config = 3.4.3.4  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
 ↑ Dual = [I48-aC](#i48-ac)  
+
+#### I72-kC
+
+![72 clips forming 36 I-edges forming tetrakis hexahedron](I72-kC.jpg)  
+↑ # Clips = 72  
+↑ Base = [tetrakis hexahedron]  
+↑ Face config = 4.6.6  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+↑ Dual = [I72-tO](#i72-to)  
+
+#### I96-jjC
+
+![96 clips forming 96 I-edges forming deltoidal icositetrahedron](I96-jjC.jpg)  
+↑ # Clips = 96  
+↑ Base = [deltoidal icositetrahedron]  
+↑ Face config = 3.4.4.4  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+↑ [I96-aaC](#i96-aac)  
 
 #### I120-jD
 
