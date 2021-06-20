@@ -23,9 +23,11 @@ Social media
 
 * [Semantic Scholar](https://www.semanticscholar.org/author/Hsin-Po-Wang/3003115)
 
+* [Microsoft Academic](https://academic.microsoft.com/profile/g141337f-e259-4116-9954-g46j0ef17e2h/Symbol/)
+
 Interests =
 Information theory / coding theory / Shannon theory:
-Random coding and polar coding over communication channels.
+Random coding and polar coding over communication channels;
 Distributed storage and distributed computation,
 application of algebra and combinatorics to.
 
@@ -60,7 +62,7 @@ Advisor = [Iwan Duursma](https://faculty.math.illinois.edu/~duursma/)
 University of Illinois at Urbana--Champaign  
 2016--2021
 
-Visiter  
+Visitor  
 National Center for Theoretical Sciences (國家理論科學研究中心)  
 2020 Winter
 
@@ -99,6 +101,8 @@ Vagreangvbany Zngurzngvpny Bylzcvnq
 Teaching in a [remote middle-school](https://goo.gl/maps/1BeM2h7fhFbhWBsm8)
 as an alternative to the mandatory military service.  
 2016
+
+[TikZ TeX Talk](/ttt) collects some of my ideas for (La)TeX and TikZ.
 
 [Vaseman](/vaseman) is about drawing people that look like vases.
 (Data plan warning: many photos!)
