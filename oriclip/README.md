@@ -1,5 +1,5 @@
 
-# Oriclip
+# Modular Oriclip
 
 One of my interests involves building
 [binder clip](https://enwp.org/Binder_clip) sculptures.
@@ -12,10 +12,12 @@ Fast scroll to
 * Special case:
   [2-clip](#2-clip-constructions),
   [6-clip](#6-clip-constructions),
+  [12-clip](#12-clip-constructions),
   [polylink](#polylink),
   [S-series](#s-series),
   [A-series](#a-series)
 * Vertex unit:
+  [Η-series](#η-series),
   [Φ-series](#φ-series),
   [Δ-series](#δ-series)
 * Edge unit:
@@ -101,6 +103,15 @@ Fast scroll to
 ↑ Base = [octahedron]  
 ↑ Symmetry = pyritohedron's rotations and reflections = $A_4\times C_2$ of order 24  
 
+### 12-clip constructions
+
+#### 12-angel
+
+![6 binder clips form an octahedron, another 6 form tentacles](12-angel.jpg)
+↑ # Clips = 12  
+↑ Base = [octahedron]  
+↑ Symmetry = pyritohedron's rotations and reflections = $A_4\times C_2$ of order 24  
+
 ### Polylink
 
 #### Q12-aC
@@ -162,13 +173,40 @@ One clip = one edge.
 
 ## Vertex unit
 
+### Η-series
+
+Four clips = one Η-vertex = one vertex.
+
+#### Η24-O
+
+![24 clips forming 6 Η-vertices forming octahedron](Η24-O.jpg)  
+↑ # Clips = 24  
+↑ Base = [octahedron]  
+↑ Vertex config = 3.3.3.3  
+↑ Symmetry = pyritohedron's rotations and reflections = $A_4\times C_2$ of order 24  
+
+#### Η48-O
+
+![24 clips forming 12 Η-edges forming octahedron](Η48-O.jpg)  
+↑ # Clips = 48  
+↑ Base = [octahedron]  
+↑ Vertex config = 3.3.3.3  
+↑ Symmetry = tetrahedron's rotations = $A_4$ of order 12  
+
+#### Η120-lC
+
+![24 clips forming 12 Η-faces forming lofted cube](Η120-lC.jpg)  
+↑ # Clips = 120  
+↑ Base = application of the *loft* operation upon a cube  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+
 ### Φ-series
 
 Three clips = one Φ-vertex = one vertex.
 
 #### Φ24-C
 
-![24 clips forming 12 Φ-edges forming cube](Φ24-C.jpg)  
+![24 clips forming 12 Φ-vertices forming cube](Φ24-C.jpg)  
 ↑ # Clips = 24  
 ↑ Base = [cube]  
 ↑ Vertex config = 4.4.4  
@@ -177,12 +215,20 @@ Three clips = one Φ-vertex = one vertex.
 
 #### Φ24-O
 
-![24 clips forming 12 Φ-edges forming octahedron](Φ24-O.jpg)  
+In progress   
 ↑ # Clips = 24  
 ↑ Base = [octahedron]  
 ↑ Vertex config = 3.3.3.3  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
 ↑ Dual = [Φ24-C](#φ24-c)  
+
+#### ΦB60-I
+
+![60 clips forming 12 Φ-vertices and 30 B-edges forming Icosahedron](ΦB60-I.jpg)  
+↑ # Clips = 60  
+↑ Vertex config = 3.3.3.3.3  
+↑ Base = [icosahedron]  
+↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
 ### Δ-series
 
@@ -190,7 +236,7 @@ Three clips = one Δ-vertex = one vertex.
 
 #### Δ60-D
 
-![60 clips forming 30 Δ-edges forming dodecahedron](Δ60-D.jpg)  
+![60 clips forming 30 Δ-vertices forming dodecahedron](Δ60-D.jpg)  
 ↑ # Clips = 60  
 ↑ Vertex config = 5.5.5  
 ↑ Base = [dodecahedron]  
@@ -198,7 +244,7 @@ Three clips = one Δ-vertex = one vertex.
 
 #### Δ180-tI
 
-![60 clips forming 30 Δ-edges forming truncated icosahedron](Δ180-tI.jpg)  
+![60 clips forming 30 Δ-vertices forming truncated icosahedron](Δ180-tI.jpg)  
 ↑ # Clips = 180  
 ↑ Vertex config = 5.6.6  
 ↑ Base = [truncated icosahedron]  
@@ -240,7 +286,7 @@ Two clips = one X-edge = one edge.
 #### X60-D
 
 ![60 clips forming 30 X-edges forming dodecahedron](X60-D.jpg)  
-↑ # Clips = 30  
+↑ # Clips = 60  
 ↑ Vertex config = 5.5.5  
 ↑ Base = [dodecahedron]  
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
@@ -249,11 +295,19 @@ Two clips = one X-edge = one edge.
 #### X60-I
 
 ![60 clips forming 30 X-edges forming icosahedron](X60-I.jpg)  
-↑ # Clips = 30  
+↑ # Clips = 60  
 ↑ Vertex config = 3.3.3.3.3  
 ↑ Base = [icosahedron]  
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 ↑ dual = [X60-D](#x60-d)  
+
+#### XX120-D
+
+![120 clips forming 30 XX-edges forming dodecahedron](XX120-D.jpg)  
+↑ # Clips = 120  
+↑ Vertex config = 5.5.5  
+↑ Base = [dodecahedron]  
+↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
 ### L-series
 
@@ -549,12 +603,12 @@ Two clips = one I-edge = one edge.
 
 #### W24-C
 
-![24 clips forming 12 W-edges forming cube](W24-C.jpg)  
-↑ # Clips = 24  
-↑ base = [cube]  
-↑ Vertex config = 4.4.4  
-↑ Symmetry = cube's rotations = $S_4$ of order 24  
-↑ dual = [W24-O](#w24-o)  
+Difficulty encountered  
+~~↑ # Clips = 24~~  
+~~↑ base = [cube]~~  
+~~↑ Vertex config = 4.4.4~~  
+~~↑ Symmetry = cube's rotations = $S_4$ of order 24~~  
+~~↑ dual = [W24-O](#w24-o)~~  
 
 #### W24-O
 
@@ -599,6 +653,16 @@ Two clips = one I-edge = one edge.
 ↑ Vertex config = 3.5.3.5  
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
+#### W240-cD
+
+![240 clips forming 60 W-edges forming chamfered dodecahedron](W240-cD.jpg)  
+↑ # Clips = 240  
+↑ Base = [chamfered dodecahedron]  
+↑ Each dodecahedron vertex = 4 new vertices  
+↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
+
+![vaseman and oriclip](../vaseman/Jau-Pao%20Wang%202021-05-20.jpg)
+
 ## Read more
 
 For a systematic introduction of polyhedra, checkout [Platonic solid] and
@@ -607,18 +671,26 @@ For a systematic introduction of polyhedra, checkout [Platonic solid] and
 For more on symmetry groups, see
 [Polyhedral group](https://enwp.org/Polyhedral_group) and the references therein.
 
-For my naming scheme, see [Conway notation] and [list of "G" polyhedra].
+For the naming scheme, see [Conway notation] and [list of "G" polyhedra].
 Or play with this interactive web app:
 [polyHédronisme](https://levskaya.github.io/polyhedronisme/).
 (Refresh to get random example!)
 
 ## Similar clip works by other people
 
+Similar works have been published under the names
+*binder clip sculpture* and *binder clip ball*.
+
 * <http://zacharyabel.com/sculpture/> by Zachary Abel.
 
 * <https://www.instructables.com/Binder-Clip-Ball/> by 69valentine.
 
 * <http://blog.andreahawksley.com/tag/binderclips/> by Andrea Hawksley.
+
+* <https://momath.org/mathmonday/math-monday-what-to-make-from-binder-clips/>
+  a news article by George Hart.
+
+* <https://www.rocky-lau.com/> LEGO counterpart by Rocky Lau.
 
 [triangular antiprism]: https://en.wikipedia.org/wiki/Antiprism
 [three-piece burr]: https://en.wikipedia.org/wiki/Burr_puzzle#Three-piece_burr
