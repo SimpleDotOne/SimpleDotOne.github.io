@@ -171,6 +171,13 @@ One clip = one edge.
 ↑ Base = [rhombicuboctahedron]  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
 
+#### A60-aD*
+
+![60 clips forming icosidodecahedron, but with helps](A60-aD.jpg)  
+↑ # Clips = 60  
+↑ Base = [icosidodecahedron]  
+↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
+
 ## Vertex unit
 
 ### Η-series
@@ -185,9 +192,17 @@ Four clips = one Η-vertex = one vertex.
 ↑ Vertex config = 3.3.3.3  
 ↑ Symmetry = pyritohedron's rotations and reflections = $A_4\times C_2$ of order 24  
 
+#### Η48-jC
+
+![48 clips forming 24 Η-vertices forming rhombic dodecahedron](Η48-jC.jpg)  
+↑ # Clips = 48  
+↑ Base = [rhombic dodecahedron]  
+↑ Face config = 3.4.3.4  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+
 #### Η48-O
 
-![24 clips forming 12 Η-edges forming octahedron](Η48-O.jpg)  
+![48 clips forming 12 Η-edges forming octahedron](Η48-O.jpg)  
 ↑ # Clips = 48  
 ↑ Base = [octahedron]  
 ↑ Vertex config = 3.3.3.3  
@@ -228,6 +243,14 @@ In progress
 ↑ # Clips = 60  
 ↑ Vertex config = 3.3.3.3.3  
 ↑ Base = [icosahedron]  
+↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
+
+#### ΦJ60-D
+
+![60 clips forming 20 Φ-vertices and 30 J-edges forming Dodecahedron](ΦJ60-D.jpg)  
+↑ # Clips = 60  
+↑ Vertex config = 5.5.5  
+↑ Base = [dodecahedron]  
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
 ### Δ-series
@@ -373,6 +396,14 @@ Two clips = one L-edge = one edge.
 ↑ Base = [cuboctahedron]  
 ↑ Vertex config = 3.4.3.4  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
+
+#### L180-tI
+
+![180 clips forming 90 L-edges forming truncated icosahedron](L180-tI.jpg)  
+↑ # Clips = 180  
+↑ Base = [truncated icosahedron]  
+↑ Vertex config = 5.6.6  
+↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
 ### I-series, Platonic
 
