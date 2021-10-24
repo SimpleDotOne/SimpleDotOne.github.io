@@ -178,6 +178,14 @@ One clip = one edge.
 ↑ Base = [icosidodecahedron]  
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
+#### A24-aC8-O
+
+![24 clips forming spiky cuboctahedron, 8 of that forming octahedron](A24-aC8-O.jpg)  
+↑ # Clips = 192  
+↑ Local base = [cuboctahedron]  
+↑ Global base = [octahedron]  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+
 ## Vertex unit
 
 ### Η-series
@@ -230,7 +238,7 @@ Three clips = one Φ-vertex = one vertex.
 
 #### Φ24-O
 
-In progress   
+In progress  
 ↑ # Clips = 24  
 ↑ Base = [octahedron]  
 ↑ Vertex config = 3.3.3.3  
@@ -453,6 +461,16 @@ Two clips = one I-edge = one edge.
 ↑ Vertex config = 3.3.3.3.3  
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 ↑ dual = [I60-D](#i60-d)  
+
+#### II24-T
+
+![24 clips forming 6 II-edges forming tetrahedron](II24-T.jpg)  
+↑ # Clips = 24  
+↑ Base = [tetrahedron]  
+↑ Vertex config = 3.3.3  
+↑ Symmetry = tetrahedron's rotations = $A_4$ of order 12  
+↑ Dual = [itself](#ii14-t)  
+
 
 ### I-series, Archimedean
 
@@ -717,6 +735,8 @@ Similar works have been published under the names
 * <https://www.instructables.com/Binder-Clip-Ball/> by 69valentine.
 
 * <http://blog.andreahawksley.com/tag/binderclips/> by Andrea Hawksley.
+
+* <https://binderclippolyhedra.com/> by unknown author.
 
 * <https://momath.org/mathmonday/math-monday-what-to-make-from-binder-clips/>
   a news article by George Hart.
