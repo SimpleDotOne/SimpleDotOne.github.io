@@ -21,6 +21,7 @@ Fast scroll to
   [Φ-series](#φ-series),
   [Δ-series](#δ-series)
 * Edge unit:
+  [Y-series](#y-series),
   [X-series](#x-series),
   [L-series](#l-series),
   [I-Platonic](#i-series-platonic),
@@ -208,6 +209,21 @@ Four clips = one Η-vertex = one vertex.
 ↑ Face config = 3.4.3.4  
 ↑ Symmetry = cube's rotations = $S_4$ of order 24  
 
+#### Η120-lC
+
+![24 clips forming 12 Η-faces forming lofted cube](Η120-lC.jpg)  
+↑ # Clips = 120  
+↑ Base = application of the *loft* operation upon a cube  
+↑ Symmetry = cube's rotations = $S_4$ of order 24  
+
+#### Η24-T
+
+![24 clips forming 4 Η-vertices forming tetrahedron](Η24-T.jpg)  
+↑ # Clips = 24  
+↑ Base = [tetrahedron]  
+↑ Vertex config = 3.3.3  
+↑ Symmetry = tetrahedron's rotations = $A_4$ of order 12  
+
 #### Η48-O
 
 ![48 clips forming 12 Η-edges forming octahedron](Η48-O.jpg)  
@@ -215,13 +231,6 @@ Four clips = one Η-vertex = one vertex.
 ↑ Base = [octahedron]  
 ↑ Vertex config = 3.3.3.3  
 ↑ Symmetry = tetrahedron's rotations = $A_4$ of order 12  
-
-#### Η120-lC
-
-![24 clips forming 12 Η-faces forming lofted cube](Η120-lC.jpg)  
-↑ # Clips = 120  
-↑ Base = application of the *loft* operation upon a cube  
-↑ Symmetry = cube's rotations = $S_4$ of order 24  
 
 ### Φ-series
 
@@ -282,6 +291,18 @@ Three clips = one Δ-vertex = one vertex.
 ↑ Symmetry = dodecahedron's rotations = $A_5$ of order 60  
 
 ## Edge unit
+
+### Y-series
+
+Three clips = one Y-edge = one edge.
+
+#### Y18-T
+
+![18 clips forming 6 Η-edges forming octahedron](Y18-T.jpg)  
+↑ # Clips = 24  
+↑ Base = [tetrahedron]  
+↑ Vertex config = 3.3.3  
+↑ Symmetry = tetrahedron's rotations = $A_4$ of order 12  
 
 ### X-series
 
