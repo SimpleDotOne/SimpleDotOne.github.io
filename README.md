@@ -3,10 +3,12 @@
 
 Postdoc @ UC San Diego (ECE)
 
+[How to pronounce my name?](/pronounce)
+
 ## Contact
 
 Email = hsw001 at ucsd dot edu  
-Email += A dot Simple dot People at g mail dot com  
+Email += a dot simple dot people at g mail dot com  
 Social media =
 [Instagram](https://www.instagram.com/xymbol.1/) +
 [Twitter](https://twitter.com/Xymbol_1) +
@@ -27,7 +29,7 @@ Social media =
 * [Microsoft Academic](https://academic.microsoft.com/profile/g141337f-e259-4116-9954-g46j0ef17e2h/Symbol/)
 
 Interests =
-Information theory / coding theory / Shannon theory:
+Information theory | coding theory | Shannon theory:
 Random coding and polar coding over communication channels;
 Distributed storage and distributed computation,
 application of algebra and combinatorics to.
@@ -45,7 +47,7 @@ the Tutte--Whitney polynomials of Reed--Muller codes of length 64.
 [This GitHub repository](https://github.com/Symbol1/BlueWaters-RM64)
 keeps the source codes, comments, and results.
 
-## Publications
+## First-Author Publications
 
 [*Multilinear Algebra for Minimum Storage Regenerating Codes: A Generalization of Product-Matrix Construction*](https://doi.org/10.1007/s00200-021-00526-3)
 is in Applicable Algebra in Engineering, Communication and Computing, 2021 October.
@@ -53,6 +55,7 @@ is in Applicable Algebra in Engineering, Communication and Computing, 2021 Octob
 
 [*Multilinear Algebra for Distributed Storage*](https://doi.org/10.1137/20M1346742)
 is in SIAM Journal on Applied Algebra and Geometry, 2021 September.
+(15 minutes [video presentation](https://www.youtube.com/watch?v=BC8rGig-QoM).)
 
 [*Log-logarithmic Time Pruned Polar Coding*](https://doi.org/10.1109/TIT.2020.3041523)
 is in IEEE Transactions on Information Theory, 2021 March.
