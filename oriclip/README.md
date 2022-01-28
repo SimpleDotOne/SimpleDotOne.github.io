@@ -5,7 +5,7 @@ One of my interests involves building
 [binder clip](https://enwp.org/Binder_clip) sculptures.
 The name *oriclip* is inspired by [*origami*](https://enwp.org/Origami),
 which stands for *ori* “fold” and *kami* “paper”.
-Note that binder clips are sometimes called foldover clip or foldback clip.
+Sometimes, binder clips are called foldover clip or foldback clip.
 
 Fast scroll to
 
@@ -29,8 +29,6 @@ Fast scroll to
   [I-Catalan](#i-series-catalan),
   [I-Fullerene](#i-series-fullerene),
   [W-series](#w-series)
-
-(The page is under construction; check back periodically.)
 
 ## Special case
 
@@ -179,10 +177,26 @@ One clip = one edge.
 ↑ Base = [icosidodecahedron]  
 ↑ Symmetry = dodecahedron's rotations  
 
+#### A12-O8-C
+
+![12 clips forming spiky octahedron, 8 of that forming cube](A12-O8-C.jpg)  
+↑ # Clips = 96  
+↑ Local base = [octahedron]  
+↑ Global base = [cube]  
+↑ Symmetry = cube's rotations  
+
+#### A24-aC4-T
+
+![24 clips forming spiky cuboctahedron, 4 of that forming tetrahedron](A24-aC4-T.jpg)  
+↑ # Clips = 96  
+↑ Local base = [cuboctahedron]  
+↑ Global base = [tetrahedron]  
+↑ Symmetry = tetrahedron's rotations  
+
 #### A24-aC8-O
 
-![24 clips forming spiky cuboctahedron, 8 of that forming octahedron](A24-aC8-O.jpg)  
-↑ # Clips = 192  
+![24 clips forming spiky cuboctahedron, 6 of that forming octahedron](A24-aC6-O.jpg)  
+↑ # Clips = 144  
 ↑ Local base = [cuboctahedron]  
 ↑ Global base = [octahedron]  
 ↑ Symmetry = cube's rotations  
@@ -208,6 +222,13 @@ Four clips = one Η-vertex = one vertex.
 ↑ Base = [rhombic dodecahedron]  
 ↑ Face config = 3.4.3.4  
 ↑ Symmetry = cube's rotations  
+
+#### Η120-aD
+
+![120 clips forming 12 Η-vertices forming icosidodecahedron](Η120-aD.jpg)
+↑ # Clips = 120  
+↑ Base = icosidodecahedron
+↑ Symmetry = dodecahedron's rotations  
 
 #### Η120-lC
 
@@ -266,7 +287,7 @@ Three clips = one Φ-vertex = one vertex.
 
 #### Φ24-O
 
-In progress  
+![24 clips forming 6 Φ-vertices forming octahedron](Φ24-O.jpg)  
 ↑ # Clips = 24  
 ↑ Base = [octahedron]  
 ↑ Vertex config = 3.3.3.3  
@@ -317,7 +338,7 @@ Three clips = one Y-edge = one edge.
 
 #### Y18-T
 
-![18 clips forming 6 Η-edges forming octahedron](Y18-T.jpg)  
+![18 clips forming 6 Η-edges forming tetrahedron](Y18-T.jpg)  
 ↑ # Clips = 24  
 ↑ Base = [tetrahedron]  
 ↑ Vertex config = 3.3.3  
@@ -510,7 +531,6 @@ Two clips = one I-edge = one edge.
 ↑ Vertex config = 3.3.3  
 ↑ Symmetry = tetrahedron's rotations  
 ↑ Dual = [itself](#ii14-t)  
-
 
 ### I-series, Archimedean
 
