@@ -19,6 +19,7 @@ Fast scroll to
 * Vertex unit:
   [Η-series](#η-series),
   [Φ-series](#φ-series),
+  [Ψ-series](#ψ-series),
   [Δ-series](#δ-series)
 * Edge unit:
   [Y-series](#y-series),
@@ -42,6 +43,11 @@ Fast scroll to
 #### 2-btb
 
 ![2 binder clips hold back to back](2-btb.jpg)  
+↑ # Clips = 2  
+
+#### 2-hth
+
+![2 binder clips hold back to back](2-hth.jpg)  
 ↑ # Clips = 2  
 
 ### 6-clip constructions
@@ -253,6 +259,14 @@ Four clips = one Η-vertex = one vertex.
 ↑ Vertex config = 3.3.3.3  
 ↑ Symmetry = pyritohedron's rotations and reflections  
 
+#### Η48-C
+
+![48 clips forming 8 Η-vertices forming cube](Η48-C.jpg)  
+↑ # Clips = 48  
+↑ Base = [cube]  
+↑ Vertex config = 4.4.4  
+↑ Symmetry = tetrahedron's rotations  
+
 #### H48-O
 
 This “H” is the Latin Ech because it is used as an edge unit.
@@ -264,21 +278,33 @@ The other “Η” are Greek Eta because they are used as vertex unit.
 ↑ Vertex config = 3.3.3.3  
 ↑ Symmetry = cube's rotations  
 
-#### Η48-C
+#### H120-D
 
-![48 clips forming 8 Η-vertices forming cube](Η48-C.jpg)  
-↑ # Clips = 48  
-↑ Base = [cube]  
-↑ Vertex config = 4.4.4  
-↑ Symmetry = tetrahedron's rotations  
+This “H” is the Latin Ech because it is used as an edge unit.
+The other “Η” are Greek Eta because they are used as vertex unit.
+
+![120 clips forming 30 H-edges forming dodecahedron](H120-D.jpg)  
+↑ # Clips = 120  
+↑ Base = [dodecahedron]  
+↑ Vertex config = 5.5.5  
+↑ Symmetry = dodecahedron's rotations  
 
 ### Φ-series
 
 Three clips = one Φ-vertex = one vertex.
 
+#### Φ12-T
+
+![12 clips forming 4 Φ-vertices forming tetrahedron](Φ12-T.jpg)  
+↑ # Clips = 12  
+↑ Base = [tetrahedron]  
+↑ Vertex config = 3.3.3  
+↑ Symmetry = tetrahedron's rotations  
+↑ Dual = [itself](#φ12-t)  
+
 #### Φ24-C
 
-![24 clips forming 12 Φ-vertices forming cube](Φ24-C.jpg)  
+![24 clips forming 8 Φ-vertices forming cube](Φ24-C.jpg)  
 ↑ # Clips = 24  
 ↑ Base = [cube]  
 ↑ Vertex config = 4.4.4  
@@ -309,6 +335,37 @@ Three clips = one Φ-vertex = one vertex.
 ↑ Vertex config = 5.5.5  
 ↑ Base = [dodecahedron]  
 ↑ Symmetry = dodecahedron's rotations  
+
+### Ψ-series
+
+Three clips = one Ψ-vertex = one vertex.
+
+#### Ψ12-T
+
+![12 clips forming 4 Ψ-vertices forming tetrahedron](Ψ12-T.jpg)  
+↑ # Clips = 12  
+↑ Base = [tetrahedron]  
+↑ Vertex config = 3.3.3  
+↑ Symmetry = tetrahedron's rotations  
+↑ Dual = [itself](#ψ12-t)  
+
+#### Ψ24-C
+
+![24 clips forming 8 Ψ-vertices forming cube](Ψ24-C.jpg)  
+↑ # Clips = 24  
+↑ Base = [cube]  
+↑ Vertex config = 4.4.4  
+↑ Symmetry = cube's rotations  
+↑ Dual = [Ψ24-O](#ψ24-o)  
+
+#### Ψ24-O
+
+![24 clips forming 6 Ψ-vertices forming octahedron](Ψ24-O.jpg)  
+↑ # Clips = 24  
+↑ Base = [octahedron]  
+↑ Vertex config = 3.3.3.3  
+↑ Symmetry = cube's rotations  
+↑ Dual = [Ψ24-C](#ψ24-c)  
 
 ### Δ-series
 
