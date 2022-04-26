@@ -172,42 +172,41 @@ convert -density 300 inversion.pdf inversion.jpg
 ```latex
 % galaxy.tex
 \documentclass[tikz]{standalone}
-
 \begin{document}
 \foreach~in{0,5,...,179.9}{
     \pgfdeclarefunctionalshading{Stars}
     {\pgfpoint{-25bp}{-25bp}}{\pgfpoint{25bp}{25bp}}{}{
         % X Y
-        1 index % X Y X
+        1 index      % X Y X
         floor .5 add % X Y U:=floor(X)+.5
-        1 index % X Y U Y
+        1 index      % X Y U Y
         floor .5 add % X Y U V:=floor(Y)+.5
-        2 copy % X Y U V U V
-        2 copy % X Y U V U V U V
-        25 div % X Y U V U V U v:=V/25
-        dup mul % X Y U V U V U v²
-        exch % X Y U V U V v² U
-        25 div % X Y U V U V v² u:=U/25
-        dup mul % X Y U V U V v² u²
-        add sqrt % X Y U V U V r:=√u²+v²
-        360 mul % X Y U V U V R:=360r
-        3 1 roll % X Y U V R U V
-        atan % X Y U V R θ
-        ~ add % add the phase
-        add % X Y U V τ:=R+θ+phase
-        sin % X Y U V sin(τ)
-        dup mul % X Y U V s:=sin(τ)²
-        5 1 roll % s X Y U V
-        3 2 roll % s X U V Y
-        sub 2 mul % s X U y:=2(V-Y)
-        dup mul % s X U y²
-        3 1 roll % s y² X U
-        sub 2 mul % s y² x:=2(X-U)
-        dup mul % s y² x²
-        add % s q:=y²+x²
+        2 copy       % X Y U V U V
+        2 copy       % X Y U V U V U V
+        25 div       % X Y U V U V U v:=V/25
+        dup mul      % X Y U V U V U v²
+        exch         % X Y U V U V v² U
+        25 div       % X Y U V U V v² u:=U/25
+        dup mul      % X Y U V U V v² u²
+        add sqrt     % X Y U V U V r:=√u²+v²
+        360 mul      % X Y U V U V R:=360r
+        3 1 roll     % X Y U V R U V
+        atan         % X Y U V R θ
+        ~ add        % add the phase
+        add          % X Y U V τ:=R+θ+phase
+        sin          % X Y U V sin(τ)
+        dup mul      % X Y U V s:=sin(τ)²
+        5 1 roll     % s X Y U V
+        3 2 roll     % s X U V Y
+        sub 2 mul    % s X U y:=2(V-Y)
+        dup mul      % s X U y²
+        3 1 roll     % s y² X U
+        sub 2 mul    % s y² x:=2(X-U)
+        dup mul      % s y² x²
+        add          % s q:=y²+x²
         le {0 0 0} {1 1 1} ifelse % s ≤ q ? black : white
     }
-   \tikz\path[shading=Stars](-10,-10)rectangle(10,10);
+    \tikz\path[shading=Stars](-10,-10)rectangle(10,10);
 }
 \end{document}
 ```
@@ -215,3 +214,62 @@ convert -density 300 inversion.pdf inversion.jpg
 ImageMagick does not convert this pdf properly.
 (In general, it has issues with functional shading.)
 I ended up using online conversion tools.
+
+# Egg
+
+![Pixelated egg with light shading](egg/egg.png)
+
+```latex
+% egg.tex
+\documentclass[tikz]{standalone}
+\def\ditherdivide{ %%%  y  x  dither_score  power_of_2
+    2 mul 4 2 roll 2 mul dup cvi 1 and 2 mul
+    3 2 roll 2 mul dup 4 1 roll cvi 1 and
+    3 mul xor 5 4 roll add 4 div 4 3 roll
+}
+\pgfdeclarefunctionalshading{ordered dithering egg}
+    {\pgfpoint{0bp}{0bp}}{\pgfpoint{50bp}{50bp}}{}{
+    %%%  X:[0,50]  Y:[0,50]
+    50 div exch 50 div 0.5 1
+    %%%  y:[0,1]  x:[0,1]  0.5:dither_score  1:power_of_2
+    \ditherdivide
+    \ditherdivide
+    \ditherdivide
+    \ditherdivide
+    \ditherdivide
+    \ditherdivide
+    \ditherdivide
+    \ditherdivide
+    %%%   Y:[0,power2]  X:[0,power2]  score power2
+    4 2 roll floor 2 index div  %  score  power2  Y  x
+    3 1 roll floor exch div     %  score  x  y
+    %%%  score x:[0:1]  y:[0,1]
+    .5 sub 2.2 mul exch .5 sub 2.2 mul  %  recenter and rescale
+    1 index 5 div 1.3 add mul   %  score  x  y(1.3+x/5)
+    %%%  score  u:=x  v:=y(1.3+x/5)
+    dup dup mul                 %  score  u  v  v^2
+    2 index dup mul add         %  score  u  v  r=radial
+    1 ge {pop pop 0.5} {
+    %   https://tex.stackexchange.com/a/75994
+        dup dup mul 2 index dup mul add 1 sub   %  -w(u,v)^2
+        .3 dup mul .4 dup mul add 1 sub         %  -w(.3,.4)^2
+        mul sqrt                %  ww'
+        exch .3 mul add         %  += vv'
+        exch .4 mul add         %  += uu'
+        dup abs add 2 div       %  keep if ≥ 0 otherwise 0
+        .1 add                  %  affine transform light
+    }ifelse
+    %%%  score  light
+    le {1} {0} ifelse           %  sum<light
+}
+\begin{document}
+    \tikz\shade[shading=ordered dithering egg]
+        (0,0)rectangle(4in,4in);
+\end{document}
+
+```
+
+Using macOS Preview.app to convert pdf to png (with resolution 256 pixel/inch).
+But if you look closely, the “correct” resolution should be 128 pixel/inch.
+Turns out there are some rounding issues no matter I use `floor` or `round`
+in the code that go away when the resolution is doubled.
