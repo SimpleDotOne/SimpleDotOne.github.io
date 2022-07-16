@@ -26,13 +26,8 @@ Social media =
 
 * [Semantic Scholar](https://www.semanticscholar.org/author/Hsin-Po-Wang/3003115)
 
-* [Microsoft Academic](https://academic.microsoft.com/profile/g141337f-e259-4116-9954-g46j0ef17e2h/Symbol/)
-
 Interests =
-Information theory | coding theory | Shannon theory:
-Random coding and polar coding over communication channels;
-Distributed storage and distributed computation,
-application of algebra and combinatorics to.
+information theory; coding theory; application of algebra and combinatorics.
 
 For meta-comments of my works categorized by topics, see:
 
@@ -49,36 +44,47 @@ keeps the source codes, comments, and results.
 
 ## First-Author Publications
 
+[*Accelerating Polarization via Alphabet Extension*] is accepted to
+International Conference on Randomization and Computation (RANDOM), September 2022.
+([Full version](https://arxiv.org/abs/2207.04522).)
+
+[*PCR, Tropical Arithmetic, and Group Testing*]
+is in IEEE International Symposium on Information Theory (ISIT), June 2022.
+([Full version](https://arxiv.org/abs/2201.05440) and
+ [slides @ ISIT](https://github.com/Symbol1/PCR-TGT).)
+
 [*Multilinear Algebra for Minimum Storage Regenerating Codes: A Generalization of Product-Matrix Construction*](https://doi.org/10.1007/s00200-021-00526-3)
-is in Applicable Algebra in Engineering, Communication and Computing, 2021 October.
+is in Applicable Algebra in Engineering, Communication and Computing, October 2021.
 (Not open access; [author copy](https://rdcu.be/cyJs2).)
 
 [*Multilinear Algebra for Distributed Storage*](https://doi.org/10.1137/20M1346742)
-is in SIAM Journal on Applied Algebra and Geometry, 2021 September.
-(15 minutes [video presentation](https://www.youtube.com/watch?v=BC8rGig-QoM).)
+is in SIAM Journal on Applied Algebra and Geometry (SIAGA), September 2021.
+(15-minute [video presentation](https://www.youtube.com/watch?v=BC8rGig-QoM).)
 
 [*Log-logarithmic Time Pruned Polar Coding*](https://doi.org/10.1109/TIT.2020.3041523)
-is in IEEE Transactions on Information Theory, 2021 March.
+is in IEEE Transactions on Information Theory, March 2021.
 
 [*Polar Codes' Simplicity, Random Codes' Durability*](https://doi.org/10.1109/TIT.2020.3041570)
-is in IEEE Transactions on Information Theory, 2021 March.
+is in IEEE Transactions on Information Theory, March 2021.
+([Slides @ NTU](https://github.com/Symbol1/Coding4Limits) and
+ [slides @ UIUC](https://github.com/Symbol1/Complex2Order).)
 
 ## Education & Positions
 
 Postdoc in Electrical and Computer Engineering  
-Advisor = Alexander Vardy  
+Advisor = [Alexander Vardy](https://orcid.org/0000-0003-3303-9078)  
 Advisor += [Ryan Gabrys](https://sites.google.com/view/ryangabrys/home)  
 University of California San Diego  
 2021--
+
+Visitor  
+National Center for Theoretical Sciences (國家理論科學研究中心)  
+Winter 2020
 
 Ph.D in Mathematics  
 Advisor = [Iwan Duursma](https://faculty.math.illinois.edu/~duursma/)  
 University of Illinois Urbana-Champaign  
 2016--2021
-
-Visitor  
-National Center for Theoretical Sciences (國家理論科學研究中心)  
-2020 Winter
 
 Bachelor of Science in Mathematics  
 National Taiwan University (國立臺灣大學)  
@@ -90,13 +96,13 @@ National Taiwan University (國立臺灣大學)
 2021
 
 Research Assistant Fellowship  
-2020 Spring
+Spring 2020
 
 [Teacher ranked as excellent by their students](https://go.illinois.edu/lotrae)  
-2019 Fall & 2019 Spring & 2018 Spring
+Fall 2019 & Spring 2019 & Spring 2018
 
 Book--Scroll Award (for top 5% GPA)  
-2015 Fall & 2014 Spring & 2013 Spring & 2012 Fall & 2012 Spring & 2011 Fall
+Fall 2015 & Spring 2014 & Spring 2013 & Fall 2012 & Spring 2012 & Fall 2011
 
 [蕭正堂紀念獎學金](http://140.112.51.185/scholarship/%E5%88%86%E9%A0%81/index%208.html)
 (Prof. Cheng-Tang Hsiao Memorial Scholarship)  
@@ -119,7 +125,7 @@ as an alternative to the mandatory military service.
 [TikZ TeX Talk](/ttt) collects some of my ideas for (La)TeX and TikZ.
 
 [Vaseman](/vaseman) is about drawing people that look like vases.
-(Data plan warning: many photos!)
+(Data plan warning: scans of drawings!)
 
 [Oriclip](/oriclip) is about binder clip sculptures.
 (Data plan warning: a lot of photos!)
