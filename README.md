@@ -1,7 +1,7 @@
 
 # Hsin-Po Wang
 
-Postdoc @ UC San Diego, Department of ECE
+Postdoc @ UC Berkeley, Department of EECS
 
 [How to pronounce my name?](/pronounce)
 
@@ -46,9 +46,10 @@ keeps the source codes, comments, and results.
 ## First-Author Publications
 
 1. Duursma, Gabrys, Guruswami, Lin, Wang.
-   [*Accelerating Polarization via Alphabet Extension*].
-   Accepted to International Conference on Randomization and Computation (RANDOM), September 2022.
-   ([Full version](https://arxiv.org/abs/2207.04522).)
+   [*Accelerating Polarization via Alphabet Extension*](https://doi.org/10.4230/LIPIcs.APPROX/RANDOM.2022.17).
+   International Conference on Randomization and Computation (RANDOM), September 2022.
+   ([Full version](https://arxiv.org/abs/2207.04522) and
+    [animation](https://www.youtube.com/watch?v=2mmbd58rSts).)
 
 2. Wang, Gabrys, Vardy.
    [*PCR, Tropical Arithmetic, and Group Testing*](https://doi.org/10.1109/ISIT50566.2022.9834718).
@@ -80,6 +81,11 @@ keeps the source codes, comments, and results.
 
 ## Education & Positions
 
+Postdoc in Engineering and Computer Sciences  
+Supervisor = [Venkatesan Guruswami](https://people.eecs.berkeley.edu/~venkatg/)  
+University of California, Berkeley  
+October 2022--
+
 Postdoc in Electrical and Computer Engineering  
 Supervisor = [Alexander Vardy](https://orcid.org/0000-0003-3303-9078)  
 Supervisor += [Ryan Gabrys](https://sites.google.com/view/ryangabrys/home)  
@@ -91,6 +97,7 @@ National Center for Theoretical Sciences (國家理論科學研究中心)
 Winter 2020
 
 Ph.D in Mathematics  
+[Dissertation](https://arxiv.org/abs/2107.06420)  
 Advisor = [Iwan Duursma](https://faculty.math.illinois.edu/~duursma/)  
 University of Illinois Urbana-Champaign  
 2016--2021
