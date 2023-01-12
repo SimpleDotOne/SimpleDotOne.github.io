@@ -44,7 +44,8 @@ or with this command that does anti-aliasing
 convert -delay 2 -density 300 -resize 300x300 cycloid.pdf cycloid.gif
 ```
 
-This is inspired by <https://twitter.com/jagarikin/status/1331409504953540613>.
+This is inspired by じゃがりきん's
+[twitter post](https://twitter.com/jagarikin/status/1331409504953540613).
 
 ## Diffuse
 
@@ -94,6 +95,9 @@ with terminal command (with ImageMagick installed)
 ```shell
 convert -density 144 -resize 2000 diffuse.pdf diffuse.jpg
 ```
+
+Related to TeX.SX post <https://tex.stackexchange.com/a/545948/51022>
+and less related to <https://tex.stackexchange.com/a/544134/51022>.
 
 ## Inversion
 
@@ -159,11 +163,18 @@ convert -density 144 -resize 2000 diffuse.pdf diffuse.jpg
 \end{document}
 ```
 
+`lenna.png` is taken from wikipedia.
 Convert pdf to jpg with terminal command (with ImageMagick installed)
 
 ```shell
 convert -density 300 inversion.pdf inversion.jpg
 ```
+
+This is the final form of a series of answers on TeX.SX, including
+<https://tex.stackexchange.com/a/332173/51022> and
+<https://tex.stackexchange.com/a/336821/51022> and
+<https://tex.stackexchange.com/a/376128/51022> and
+<https://tex.stackexchange.com/a/479188/51022>.
 
 ## Galaxy
 
@@ -215,6 +226,8 @@ ImageMagick does not convert this pdf properly.
 (In general, it has issues with functional shading.)
 I ended up using online conversion tools.
 
+This is inspired by <http://www.peda.com/grafeq/gallery.html>.
+
 # Egg
 
 ![Pixelated egg with light shading](egg/egg.png)
@@ -243,7 +256,7 @@ I ended up using online conversion tools.
     %%%   Y:[0,power2]  X:[0,power2]  score power2
     4 2 roll floor 2 index div  %  score  power2  Y  x
     3 1 roll floor exch div     %  score  x  y
-    %%%  score x:[0:1]  y:[0,1]
+    %%%  score  x:[0:1]  y:[0,1]
     .5 sub 2.2 mul exch .5 sub 2.2 mul  %  recenter and rescale
     1 index 5 div 1.3 add mul   %  score  x  y(1.3+x/5)
     %%%  score  u:=x  v:=y(1.3+x/5)
@@ -272,4 +285,68 @@ I ended up using online conversion tools.
 Using macOS Preview.app to convert pdf to png (with resolution 256 pixel/inch).
 But if you look closely, the “correct” resolution should be 128 pixel/inch.
 Turns out there are some rounding issues no matter I use `floor` or `round`
-in the code that go away when the resolution is doubled.
+in the code.  The issues go away when the resolution is doubled.
+
+This is a derivation of <https://tex.stackexchange.com/a/267088/51022>,
+motivated by Kurzgesagt's video
+[The Egg - A Short Story](https://www.youtube.com/watch?v=h6fcK_fRYaI).
+
+# Email
+
+This is not Ti*k*Z.  But this piece of TeX code
+generates my old, deprecated email `hpwang2@illinois.edu`.
+
+```latex
+\def~#1#2{#1\catcode`#27
+~}~^^((((7000077777!!!!.
+''''rrrr44440444400)))),
+,,,,,)))())./////)))3333
+~....%$$$$577757775\endr
+```
+
+This piece of TeX code generates my old, deprecated email `hsw001@ucsd.edu`.
+
+```latex
+\def~#1#2{#1\catcode`#27
+~}~^^((((733337)))pppppq
+qqq444400005####5553$$$$
+mmmn\%%%%666647775)\endq
+```
+
+Try it on Overleaf!  But either you need to change the compiler to TeX
+manually (which is not quite easy), or you can wrap the code above using:
+
+```latex
+\documentclass{article}
+\let\oldend=\end
+\def\end#1~{\let\end\oldend}
+\begin{document}
+...
+\end{document}
+```
+
+
+The trick is that TeX has this neat feature that `^^68` is interpret as
+the letter `h` because the ASCII code for the letter `h` is `0x68`.
+TeX also interprets `^^(` as the letter `h` because the ASCII code
+for the left parenthesis `(` and the ASCII code for the letter `h` differ by
+sixty-four.  With this trick, lowercase letters `abcd...` can be **expanded**
+into `^^61^^62^^63^^64...` or, less obviously `^^!^^"^#^^$...`.
+
+However, it would be less mysterious if one sees two superscript symbols `^^`
+everywhere in a code.  So TeX also has this neat feature that it doesn't have to
+be two superscript symbols; any repeated symbols whose category code is seven
+will work.  For instance, if we change the category code of the left parenthesis
+to seven by ```\catcode`(=7```, then `(((` equals `^^(` equals `h`.  Similarly,
+if you change the category code of the number six to seven by
+```\catcode`6=7```, then `6668` equals `^^68` equals `h`.
+
+Now it becomes a matter of looking up every letter in your email address
+and choose either `^^68` or `^^(`, whichever maximizes the obscurity.
+
+These pieces of code are motivated by the (unnecessary) need to hide one's
+email address from *non-experts*.  This is inspired by the famous file
+[`xii.tex`](https://ctan.org/tex-archive/macros/plain/contrib/xii).
+
+
+
