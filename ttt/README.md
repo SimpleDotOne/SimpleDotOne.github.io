@@ -282,10 +282,11 @@ This is inspired by <http://www.peda.com/grafeq/gallery.html>.
 
 ```
 
-Using macOS Preview.app to convert pdf to png (with resolution 256 pixel/inch).
-But if you look closely, the “correct” resolution should be 128 pixel/inch.
-Turns out there are some rounding issues no matter I use `floor` or `round`
-in the code.  The issues go away when the resolution is doubled.
+Using macOS Preview.app to convert pdf to png (with resolution 256
+pixel/inch).  But if you look closely, the “correct” resolution should
+be 128 pixel/inch.  Turns out there are some rounding issues no matter I
+use `floor` or `round` in the code.  The issues go away when the
+resolution is doubled.
 
 This is a derivation of <https://tex.stackexchange.com/a/267088/51022>,
 motivated by Kurzgesagt's video
@@ -304,7 +305,8 @@ generates my old, deprecated email `hpwang2@illinois.edu`.
 ~....%$$$$577757775\endr
 ```
 
-This piece of TeX code generates my old, deprecated email `hsw001@ucsd.edu`.
+This piece of TeX code generates my old, deprecated email
+`hsw001@ucsd.edu`.
 
 ```latex
 \def~#1#2{#1\catcode`#27
@@ -325,28 +327,194 @@ manually (which is not quite easy), or you can wrap the code above using:
 \end{document}
 ```
 
-
 The trick is that TeX has this neat feature that `^^68` is interpret as
-the letter `h` because the ASCII code for the letter `h` is `0x68`.
-TeX also interprets `^^(` as the letter `h` because the ASCII code
-for the left parenthesis `(` and the ASCII code for the letter `h` differ by
-sixty-four.  With this trick, lowercase letters `abcd...` can be **expanded**
-into `^^61^^62^^63^^64...` or, less obviously `^^!^^"^#^^$...`.
+the letter `h` because the ASCII code for the letter `h` is `0x68`.  TeX
+also interprets `^^(` as the letter `h` because the ASCII code for the
+left parenthesis `(` and the ASCII code for the letter `h` differ by
+sixty-four.  With this trick, lowercase letters `abcd...` can be
+**expanded** into `^^61^^62^^63^^64...` or, less obviously
+`^^!^^"^#^^$...`.
 
-However, it would be less mysterious if one sees two superscript symbols `^^`
-everywhere in a code.  So TeX also has this neat feature that it doesn't have to
-be two superscript symbols; any repeated symbols whose category code is seven
-will work.  For instance, if we change the category code of the left parenthesis
-to seven by ```\catcode`(=7```, then `(((` equals `^^(` equals `h`.  Similarly,
-if you change the category code of the number six to seven by
-```\catcode`6=7```, then `6668` equals `^^68` equals `h`.
+However, it would be less mysterious if one sees two superscript symbols
+`^^` everywhere in a code.  So TeX also has this neat feature that it
+doesn't have to be two superscript symbols; any repeated symbols whose
+category code is seven will work.  For instance, if we change the
+category code of the left parenthesis to seven by ```\catcode`(=7```,
+then `(((` equals `^^(` equals `h`.  Similarly, if you change the
+category code of the number six to seven by ```\catcode`6=7```, then
+`6668` equals `^^68` equals `h`.
 
 Now it becomes a matter of looking up every letter in your email address
 and choose either `^^68` or `^^(`, whichever maximizes the obscurity.
 
-These pieces of code are motivated by the (unnecessary) need to hide one's
-email address from *non-experts*.  This is inspired by the famous file
-[`xii.tex`](https://ctan.org/tex-archive/macros/plain/contrib/xii).
+These pieces of code are motivated by the (unnecessary) need to hide
+one's email address from *non-experts*.  This is inspired by the famous
+file [`xii.tex`](https://ctan.org/tex-archive/macros/plain/contrib/xii).
+
+## Bonsai
+
+![A binary tree that is somewhat irregular](bonsai/bonsai.png)
+
+```latex
+\documentclass[tikz]{standalone}
+\begin{document}
+    \usepgfmodule{parser}
+    \pgfparserdef{bonsai}{initial}{the character :}{
+        % \PackageWarning{bonsai}{execute :}
+        \definecolor{root}{Hsb}{40,1,0.3}
+        \definecolor{leaf}{Hsb}{80,1,0.6}
+        \def\bonsaiwidth{5pt}
+        \def\fanout{120}
+        \pgfmathsetmacro\angle{\fanout*1.5 + 30}
+        \def\factor{100}
+    }
+    \pgfparserdef{bonsai}{initial}{the character <}{
+        % \PackageWarning{bonsai}{execute <}
+        \pgfmathsetmacro\angle{\angle - \fanout}
+        \path (0, 0) coordinate (stem);
+        \bgroup\iffalse\egroup\fi
+        \pgfmathsetmacro\angle{\angle * 0.75}
+        \pgfmathsetmacro\factor{\factor * (0.8 + abs(\angle/1000))}
+        \pgftransformshift{\pgfpointpolarxy{\angle}{\factor/100}}
+        \draw [root!\factor!leaf, line width=\factor/100*\bonsaiwidth]
+            (stem) to[in=\angle+180+rand*20, out=\angle+rand*20] (0, 0);
+        \pgfmathsetmacro\angle{\angle + \fanout*1.5}
+    }
+    \pgfparserdef{bonsai}{initial}{the character >}{
+        % \PackageWarning{bonsai}{execute >}
+        \iffalse\bgroup\fi\egroup
+    }
+    \pgfparserdef{bonsai}{initial}{the character .}{
+        % \PackageWarning{bonsai}{execute .}
+        \fill [leaf] (0, 0) circle [radius=\factor/500];
+    }
+    \pgfparserdef{bonsai}{initial}{the character ;}{
+        % \PackageWarning{bonsai}{execute ;}
+        \pgfparserswitch{final}
+    }
+    \begin{tikzpicture}
+        \tikzset{rotate=90}
+        \pgfparserparse{bonsai}:
+            <<<.><<.><.>>><<<<.><.>><<<.><.>><<<.><.>><<<<.><.>><<<.><.>
+            ><.>>><<<.><.>><.>>>>>><<.><.>>>><<<.><.>><<<<<.><<.><<.><<.
+            ><.>>>>><<.><<<><.>><.>>>><<<.><.>><<<<.><.>><.>><.>>>><<<<.
+            ><.>><<<.><.>><<.><.>>>><<<.><.>><<<<<.><.>><<<<.><.>><.>><.
+            >>><<.><.>>><<<.><.>><.>>>>>>>
+        ;
+        \tikzset{rotate=-90}
+        \filldraw [red!50!black, line width=2pt]
+            (-1, 0) -- (1, 0) -- (.7, -.5) -- (-.7, -.5) -- cycle;
+    \end{tikzpicture}
+\end{document}
+```
+
+Convert pdf to png with terminal command (with ImageMagick installed)
+
+```latex
+convert -density 600 bonsai.pdf bonsai.png
+```
+
+# Pixel art
+
+![A pixelated Mona Lisa](pixel/pixel.png)
 
 
+```latex
+% pixel.tex
 
+\documentclass[tikz]{standalone}
+	\usepgfmodule{parser}
+
+\begin{document}
+
+\def\pixelartinitial{
+    \def\pixelartx{0}
+    \def\pixelarty{0}
+    \catcode13=12
+}
+\def\pixelartnextrow{ % next row = new line = enter
+    \def\pixelartx{0}
+    \pgfmathsetmacro\pixelarty{\pixelarty - 1}
+}
+\def\pixelartput#1{ % #1 is a color or tikz options
+    \pgfmathsetmacro\pixelartx{\pixelartx + 1}
+    \fill [color={#1}] (\pixelartx, \pixelarty) rectangle +(1.05, 1.05);
+    % 1.05 is overshoot; necessary to avoid white gaps
+}
+\def\pixelartfinal{
+    \catcode13=5
+    \pgfparserswitch{final}
+}
+
+\pgfparserdef{pixel art}{initial}{the character <}{\pixelartinitial}
+\pgfparserdef{pixel art}{initial}{the character >}{\pixelartfinal}
+\catcode13=12\relax%
+\pgfparserdef{pixel art}{initial}{the character ^^M}{\pixelartnextrow}%
+\catcode13=5\relax
+\pgfparserdef{pixel art}{initial}{the character '}{\pixelartput{gray,7:white,0;black,7}}
+\pgfparserdef{pixel art}{initial}{the character -}{\pixelartput{gray,7:white,1;black,6}}
+\pgfparserdef{pixel art}{initial}{the character ;}{\pixelartput{gray,7:white,2;black,5}}
+\pgfparserdef{pixel art}{initial}{the letter l}{\pixelartput{gray,7:white,3;black,4}}
+\pgfparserdef{pixel art}{initial}{the letter C}{\pixelartput{gray,7:white,4;black,3}}
+\pgfparserdef{pixel art}{initial}{the letter D}{\pixelartput{gray,7:white,5;black,2}}
+\pgfparserdef{pixel art}{initial}{the letter H}{\pixelartput{gray,7:white,6;black,1}}
+\pgfparserdef{pixel art}{initial}{the letter M}{\pixelartput{gray,7:white,7;black,0}}
+
+\begin{tikzpicture}[x=1mm, y=2mm]
+\pgfparserparse{pixel art}<
+lll;l;;;l;l;;llll;l;;l;;;ll;l;ll;l;ll;;ll;;;;;;;l;l;;;l;;;;;
+lCClCCClCClCClllCCClCCClCCCCClllClllllllllllllllllllllCllCCC
+;ClCllllCllllllCCllllllllClllllllCllDDDDDDDDDDDDDDDCDCDDllll
+;lDllDDDCCCDDCDDDCllllDllDDDDCDCCDDDCDCCDCDDDDDDDDCCDDCllDCl
+CDDCDCDDDCDCCCCCDDDDCDDDCDCC;lll;CllDCCCDDDDDCCCDDDDCCCllDCC
+lCDCDCCCCCCCDDCDDDCDDCDll---';-;;;--llCCCDCCCCDCCDDCDCCDDDDD
+CDDDDCCHCCCCCDDCCCCCHHlllCHDCDC;l--;-;;CCCCCDCCCCDDCDDCCCCDD
+;DCCCCHDHDHDHHHHHCCDHC-CHMHHMDCl;-----;-DCCCCCDCDDCCCCDCDDCC
+lDCCHDCHDHDHDHDHDHHDC;lHMMMMMDDCCll---;;lCCllDCDCCCDCCDDDCCD
+-;ClClCCDDllCCHHHDDl--lDDDDHDDDDl;l---;--l;;CClCCDCCCDCDllll
+;-;;CllCCCl;;;lDCCD;;-CC;;DClDC;Cl;--;;--lll;l;;;lDDDCClllll
+-;;;CClCC;l;;;;;llCl-;DDHHDDDDDDHD;----;;l;ll;ll;lDCDllClClC
+-;ll;;;;;;l;llll;l;--;;HDHDCCDDCl;-;;;;;--ll;;;;;lCCCl;;;;;;
+;l--l;llll;;lll;;;;;-;;CDCC-;CDl;l-;-;;----------lllllll;-;l
+;---ll;l;llll;llll-;--;lCCDllllCll---;;;-;;ll;llll;l;l-;ll;l
+;---lllll-;-;lll;l;----;-CDCC;l;;--;-;;----lllllll;;--ll;;ll
+;;-;---;l;l;;l;;CCC;;-;;;-'--;---;----;;;;;--lll-;-----l-ll-
+;----;ll;ll;;CCCClll---;-;-lC;lll;;l--;-;;-;-llll;lllll;-ll;
+--l;;ll;;;lll-l;--;;;--;;;llDDlCDDDll;;--;;-;;;----;;llll;--
+;l;llllllllll-;-;;;---;llDHDDDHDDHDD;--;;;;;;--;;C;;;ll;----
+-l;ll-l;ll;l--;----;;;-DDMMMMDDMDDHDl---;';-;;;;-;;;l;;;l;--
+;-lll-ll;CC;;-l---;;lCDDMMMMMMMHDHHDl--l;;;;l-;''--l;l;;Clll
+;;;l;llll;;;;;------CHMHMMHMHHMMHMHCl;;;;;;--;-''-'';;--llC;
+;-;lll;;l;;;l-;;;-;-lCDDCHMHHHHHMDl;;--;;-'''-'-'''';-------
+---l;;;l;l;--;-;;;-;--;;-l;Clllll-;;;;';---;''''-''''--;;-;-
+--;-l;l;lll--;;;;-;--;--l--;-;;-;-;'-;-;;;;--;;;'''''';--;;-
+;---l;;ll;-;;;---;;;;;;---;;----;-''';;';;;;-;;-'''''';--;;-
+--;;CClCC;;;;;;-;-;;-';;;;;;;;;;'''''';;-;---'-'-''';'';---;
+;-l;l;ll----;;;;;;-;;''--;;;-;;'''''''-;-;-'--'''''''''-;-;;
+;;;----;;-----;-;-;;-';'';;;;'''-'''''-;'''''-'-'''-'''''-;;
+;-;;--;--;;;-----;;-;';''--;'''';'''''''--''-'''-'-''''-';;;
+;-;;;;;;--;;;;;;;;-';;;;;;'-''-'--'-'''''--'''-'''''''''-;;-
+;-;;;;;-lll--l-;;-';''---'-'-'--'''-''''''''''-'''-'''''-'-;
+;;-;;;--lll;llll;DCCCl;l-;-M-'''''''-'''''''''''-''-''--'-''
+;;;;;;;;;---;-;llCCCCCCDDlCl-'--''--------''''-'-'-'''''''-'
+;;;;;;;--;;;--;;l;;CCCDDDDClCDl-;;--;;;;;;-;'''-'-''''''''''
+;;''''-';;'';;'---l;lClllllC;CC;l;ll-----;;;--''-''''-'--'''
+';'-;'-;';'''--;;lDl;l;;CCCCl;---l-;-----;;';;---'''--'-'';;
+''-'';;;-''''-ll;;lCl;-lllCCll;;-;;;-;;;;';;'''-''-''''-'';;
+''''''''''''';-ll;lC;--;--';--;--;-'''-'''-''''--'''''-'''''
+''-'';'''''''-''-;l';;;;;-;-;;''--'-'-''''--''-'-'-'-'''''''
+''''''-';-;;'''';;;;;;;;;;;'-'--'''-''''-'''''-'''''----'-''
+'-'''''-;''-'';;;''''-''''-'--'-''''-'-''----''-'---'''''''-
+'''''-''-'';;;'''''-'''''----'-'''-'-'-'-'----'-''-'-'-'-'''
+'''''''';;;;;;;''''''''''''-'''-'-''--''''''''---''''''-''''
+>
+\end{tikzpicture}
+
+\end{document}
+```
+
+Convert pdf to png with terminal command (with ImageMagick installed)
+
+```latex
+convert -density 300 pixel.pdf pixel.png
+```
