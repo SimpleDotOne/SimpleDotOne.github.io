@@ -1,7 +1,7 @@
 
-# Hsin-Po Wang
+# Hsin-Po Wang （王新博）
 
-Postdoc @ UC Berkeley, Department of EECS
+Apple Research Fellow @ Simons Institute for the Theory of Computing
 
 * [PDF CV](/cv/cv%20Hsin-Po%20WANG.pdf)
 
@@ -10,15 +10,17 @@ Postdoc @ UC Berkeley, Department of EECS
 * Email: <a.simple.people@gmail.com>
 
 * Social media:
-  [Instagram](https://www.instagram.com/xymbol.1/) /
+  [Facebook](https://www.facebook.com/xymbol.1/) /
+  [Discord](https://discord.com/channels/@me/527393219441590273) /
   [Twitter](https://twitter.com/Xymbol_1) /
+  [Instagram](https://www.instagram.com/xymbol.1/) /
   [StackExchange](https://stackexchange.com/users/4418253/symbol-1)
 
 ## Research
 
-* [arXiv author page](https://arxiv.org/a/wang_h_8.html)
-
 * [Google Scholar profile](https://scholar.google.com/citations?user=tJ8-ChgAAAAJ)
+
+* [arXiv author page](https://arxiv.org/a/wang_h_8.html)
 
 * Other profiles:
   [dblp](https://dblp.org/pid/75/329-1.html) /
@@ -28,20 +30,27 @@ Postdoc @ UC Berkeley, Department of EECS
 Interests:
 information theory /
 coding theory /
-polar code /
-distributed system /
+polar codes /
+distributed storage and distributed computation /
 group testing /
-applications of algebra, combinatorics, calculus, and probability theory.
+applications of
+algebra,
+combinatorics,
+calculus,
+probability theory,
+and other mathematical tools to said topics.
 
 For meta-comments of my works categorized by topics, see:
 
-* [Polar coding papers](/paper/polar)
+* [Polar code papers](/paper/polar)
 
 * [Distributed storage papers](/paper/storage)
 
 * [Distributed computation paper](/paper/compute)
 
 * [Group testing papers](/paper/grouptest)
+
+* [Polder ordering papers] (to be elaborated...)
 
 I have once computed, on a supercomputer,
 the Tutte--Whitney polynomials of Reed--Muller codes of length 64.
@@ -53,7 +62,8 @@ keeps the source codes, comments, and results.
 * Ph.D in Mathematics  
   [Dissertation](https://www.ideals.illinois.edu/items/120952)
   (better-looking
-   [single-spacing version](https://arxiv.org/abs/2107.06420))  
+   [single-spacing version](https://arxiv.org/abs/2107.06420)
+   and [slides](https://github.com/Symbol1/PhD-Thesis))  
   Advisor = [Iwan Duursma](https://faculty.math.illinois.edu/~duursma/)  
   University of Illinois Urbana-Champaign  
   2016--2021
@@ -86,7 +96,7 @@ keeps the source codes, comments, and results.
   (Taught a small, short lecture on polar codes.
    [Lecture notes](https://drive.google.com/drive/u/5/folders/1dOaQAjmQxFTOXZdjdhJnkLLelNqQPsfi).)  
 
-* Postdoctoral Scholar in
+* Postdoctoral Scholar  
   Supervisor = [Alexander Vardy](https://orcid.org/0000-0003-3303-9078)  
   Supervisor += [Ryan Gabrys](https://sites.google.com/view/ryangabrys/home)  
   Department of Electrical and Computer Engineering  
@@ -145,7 +155,7 @@ keeps the source codes, comments, and results.
 4. H.-P. Wang, V. Guruswami.
    [*How Many Matrices Should I Prepare to Polarize Channels Optimally Fast?*](https://doi.org/10.1109/ISIT54713.2023.10206989).
    IEEE International Symposium on Information Theory (ISIT), June 2023.
-   (4-in-1 [slides](https://drive.google.com/file/d/12sEvE4ErTR7rGy4opnaWTEW0oNqjuVwN/view))
+   (4-in-1 [slides](https://drive.google.com/file/d/12sEvE4ErTR7rGy4opnaWTEW0oNqjuVwN/view).)
 
 5. H.-P. Wang, V.-F. Dragoi.
    [*Fast Methods for Ranking Synthetic BECs*](https://doi.org/10.1109/ISIT54713.2023.10206704).
@@ -203,12 +213,23 @@ keeps the source codes, comments, and results.
     [slides @ UIUC](https://github.com/Symbol1/Complex2Order) and
     [slides @ Princeton](https://github.com/Symbol1/abc).)
 
+## Invited Talk
+
+* H.-P. Wang.
+  [*Channel Manipulation as a Coding Technique*](https://meetings.ams.org/math/jmm2024/meetingapp.cgi/Paper/29146).
+  Joint Mathematics Meetings (JMM), January 2024.
+
 ## Extracurricular
 
 * Jury  
   [2023 International Mathematics Competition](http://bimc2023.com/)  
   [2022 International Mathematics Competition](https://www.facebook.com/iimc2022/)  
-  [2022 International Young Mathematicians Convention](http://www.cmseducation.org/iymc/)
+  [2022 International Young Mathematicians Convention](http://www.cmseducation.org/iymc/)  
+  2016 International Mathematics Competition  
+  2012 International Mathematics Competition  
+
+* Team Leader  
+  2015 International Mathematics Competition
 
 * Teaching
   in a [remote middle-school](https://goo.gl/maps/1BeM2h7fhFbhWBsm8)  
@@ -217,12 +238,12 @@ keeps the source codes, comments, and results.
 
 * [TikZ TeX Talk](/ttt) collects some of my ideas for (La)TeX and TikZ.
 
-* [Oriclip](/oriclip) is about binder clip sculptures.
+* [Oriclip](/oriclip) is about binder clip sculptures.  
 (Data plan warning: a lot of photos!)
 
-* [Vaseman](/vaseman) is about drawing people that look like vases.
+* [Vaseman](/vaseman) is about drawing people that look like vases.  
 (Data plan warning: scans of drawings!)
 
-* 薩爾達傳說 [曠野之息的中、外文資料](/BotW)
+* 薩爾達傳說·[曠野之息的中、外文資料](/BotW)
 
-* 薩爾達傳說 [王國之淚的中、外文資料](/TotK)
+* 薩爾達傳說·[王國之淚的中、外文資料](/TotK)
